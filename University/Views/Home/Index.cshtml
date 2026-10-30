@@ -1,0 +1,26 @@
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<div class="jumbotron">
+    <h1>University</h1>
+    <p class="lead">Mantenimiento con ASP.NET MVC 5 y Entity Framework 6 (Database First) sobre la base de datos UniversityDB.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Courses</h2>
+        <p>Listar, crear, editar y eliminar cursos.</p>
+        <p>@Html.ActionLink("Ir a Courses »", "Index", "Courses", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Students</h2>
+        <p>Mantenimiento de estudiantes, incluido el campo Email.</p>
+        <p>@Html.ActionLink("Ir a Students »", "Index", "Students", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Enrollments</h2>
+        <p>Matrículas: relaciona cursos y estudiantes con su nota.</p>
+        <p>@Html.ActionLink("Ir a Enrollments »", "Index", "Enrollments", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
